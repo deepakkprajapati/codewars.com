@@ -16,19 +16,13 @@ dkprahapa
 # hiyacej277@songsign.com,dp010
 # arr = [ x for x in range(-10 25 2)]
 arr = [2, 4, 0, 100, 4, 11, 2602, 36]
+# [-8700445, 8771853, 5090661, -8149067, -3972845, -5783021, -2720003, -5250345, -9424339, 8755105, 2877093, 1480085, 8939895, 3739733, -3685193, 1757573, -7711103, -1474481, 1079519, -5448157, -7994557, -3024437, -1277607, -5766009, -6795004, 346183, 8989297, -6517193, -3694973, 5211799, -4448521, -1811423]
+# Expected: -6795004
 # arr.append(99)
 
 def find_outlier(integers):
+
 	listisodd  = sum(arr)%2 == 0
-	
-	# if s%2 == 0: # means list is odd and return should be even
-	# 	for bar in integers:
-	# 		if bar% 2 == 0:
-	# 			return bar
-	# else: # list is even and return should be odd 
-	# 	for bar in integers:
-	# 		if bar% 2 != 0:
-	# 			return bar
 	for item in arr:
 		# if list is odd and current item is even then return the even
 		if listisodd and  item %2 == 0:
