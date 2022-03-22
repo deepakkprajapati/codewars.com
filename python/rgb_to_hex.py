@@ -37,3 +37,18 @@ def solution(r,g,b):
 
 
 print(solution(r,g,b))
+
+
+'''
+these are more complicated but 1 liner solutions
+
+def rgb(r, g, b):
+    round = lambda x: min(255, max(x, 0))
+    return ("{:02X}" * 3).format(round(r), round(g), round(b))
+def rgb(*args):
+    return ''.join(map(lambda x: '{:02X}'.format(min(max(0, x), 255)), args));
+def rgb(r, g, b): 
+    return ''.join(['%02X' % max(0, min(x, 255)) for x in [r, g, b]])
+
+
+'''
